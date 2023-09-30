@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<posts>
+    <row Id="1" PostTypeId="1" CreationDate="2016-01-12T19:24:29.457" Score="22" ViewCount="214"
+        OwnerUserId="30" LastActivityDate="2016-01-13T13:36:41.160"
+        Tags="&lt;discussion&gt;" AnswerCount="3" CommentCount="1" ContentLicense="CC BY-SA 3.0" />
+    <row Id="2" PostTypeId="1" CreationDate="2016-01-12T19:39:07.193" AcceptedAnswerId="22" Score="2" ViewCount="68"
+        OwnerUserId="10" LastActivityDate="2016-01-13T00:43:12.200"
+        Tags="&lt;discussion&gt;"
+        AnswerCount="3" CommentCount="3" ContentLicense="CC BY-SA 3.0" />
+    <row Id="3" PostTypeId="2" ParentId="2" CreationDate="2016-01-12T20:09:21.760" Score="2"
+        OwnerUserId="16" LastActivityDate="2016-01-12T20:09:21.760" CommentCount="1"
+        ContentLicense="CC BY-SA 3.0" />
+</posts>

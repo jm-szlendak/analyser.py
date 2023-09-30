@@ -13,11 +13,11 @@ class TestAnalyse(unittest.TestCase):
 
     def test_analyse(self):
         expected = {
-            'avg_score': 8.666666666666666,
-            'first_post': '2016-01-12T19:24:29Z',
-            'last_post': '2016-01-12T20:09:21Z',
-            'total_accepted_posts': 1,
-            'total_posts': 3
+            'avg_response_score': 8.666666666666666,
+            'oldest_post_create_date': '2016-01-12T19:24:29Z',
+            'newest_post_create_date': '2016-01-12T20:09:21Z',
+            'total_answered_posts_count': 1,
+            'total_posts_count': 3
         }
 
         with open(self.postsXmlPath, 'r') as xmlFile:

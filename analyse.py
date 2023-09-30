@@ -21,7 +21,8 @@ def analyse(stream):
         if (element.tag == 'row'):
             data = element.attrib
             total_posts += 1
-            score_sum += int(data['Score'])
+            if 'Score' in data:
+                score_sum += int(data['Score'])
 
             if 'AcceptedAnswerId' in data:
                 total_accepted_posts += 1
@@ -38,9 +39,9 @@ def analyse(stream):
     avg_score = score_sum / total_posts
 
     return {
-        'total_posts': total_posts,
-        'total_accepted_posts': total_accepted_posts,
-        'avg_score': avg_score,
-        'first_post': first_post_created_date.strftime(DATE_FORMAT),
-        'last_post': last_post_created_date.strftime(DATE_FORMAT),
+        'total_posts_count': total_posts,
+        'total_answered_posts_count': total_accepted_posts,
+        'avg_response_score': avg_score,
+        'oldest_post_create_date': first_post_created_date.strftime(DATE_FORMAT),
+        'newest_post_create_date': last_post_created_date.strftime(DATE_FORMAT),
     }
